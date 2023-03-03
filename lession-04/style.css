@@ -100,7 +100,7 @@ header nav a:hover {
 }
 
 .main-content {
-	height: 350px;
+	height: 950px;
 	margin: 20px 0;
 	overflow: hidden;
 }
@@ -114,6 +114,13 @@ header nav a:hover {
 .mainSection .list_1 img {
 	width: 128px;
 }
+
+.mainSection .list_1 li {
+  	background-color: wheat;
+  	text-align: center;
+  	margin-bottom: 20px;
+  	padding: 20px;
+ }
 
 .leftNav ul li {
 	height: 30px;
@@ -146,6 +153,15 @@ footer {
   header {
   	position: fixed;
   	top: 0;
+  }
+
+  .mainSection .list_1 {
+		padding: 0 10px;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+  .mainSection .list_1 li {
   }
 }
 
