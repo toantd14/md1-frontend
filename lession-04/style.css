@@ -83,11 +83,11 @@ header img.logo {
 	height: 64px;
 }
 
-header nav {
+header nav.navDesk {
 	display: flex;
 }
 
-header nav a {
+header nav.navDesk a {
 	display: block;
 	padding: 10px 20px;
 	line-height: 40px;
@@ -95,8 +95,11 @@ header nav a {
 	background-color: wheat;
 }
 
-header nav a:hover {
+header nav a.navDesk:hover {
 	background-color: skyblue;
+}
+header nav.navMobi {
+	display: none;
 }
 
 .main-content {
@@ -151,9 +154,24 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   header {
-  	position: fixed;
+		position: fixed;
   	top: 0;
   }
+
+  header nav.navDesk {
+  	display: none;
+  }
+
+  header nav.navMobi {
+  	display: block;
+  }
+  header nav.navMobi a {
+		display: block;
+		padding: 10px 20px;
+		line-height: 40px;
+		text-decoration: none;
+		background-color: wheat;
+	}
 
   .mainSection .list_1 {
 		padding: 0 10px;
