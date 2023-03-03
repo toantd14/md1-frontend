@@ -1,0 +1,74 @@
+* {
+}
+ul, ol {
+	word-spacing: 5px;
+}
+li {
+	color: red;
+}
+ul li {
+	background: yellow;
+}
+div ul li {
+	font-size: 24px;
+}
+ol li {
+	font-style: italic;
+}
+li {
+	color: green;
+}
+ul > li {
+	color: blue;
+}
+
+
+div p {
+	text-decoration: underline;
+}
+div > p {
+	color: red;
+}
+div + p {
+	background: yellow;
+}
+div ~ p {
+	background: violet;
+}
+
+.size24 {
+	font-size: 24px;
+}
+#size40 {
+	font-size: 40px;
+}
+
+div .size24 {
+	font-style: italic;
+}
+
+div.size24 {
+	word-spacing: 20px;
+}
+
+
+
+.h1style {
+	color: red;
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#pstyle {
+	background: yellow;
+	color:blue;
+	font-size: 32px;
+}
+
+
+
+#boxmodel {
+	
+}

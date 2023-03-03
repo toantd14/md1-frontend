@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<!-- /?username=dfgdfgdfg&pass=dfg534&bod=&hc=%23000000&gender=male&avatar=&bio=dfg+dfdrs+df -->
+<!-- /?pass=sd&bod=&hc=%23000000&gender=male&avatar=&x=0&y=0&bio= -->
+
+<form action="/" method="GET" enctype="multipart/form-data">
+	<h4>Form Register<h4><hr>
+	
+	Username(*): <input type="text" name="username" required="true" placeholder="Hãy nhập tài khoản" autocomplete="on" tabindex="3" /><br><br>
+	
+	Password(*): <input type="password" name="pass" required="true" placeholder="Hãy nhập mật khẩu" tabindex="4" /><br><br>
+	
+	Birth of date: <input type="date" name="bod" tabindex="1" /><br><br>
+	
+	Hobby color: <input type="color" name="hc" tabindex="2" /><br><br>
+	
+	Gender: <br><br>
+	Male <input type="radio" name="gender" value="male" checked="checked">
+	Female <input type="radio" name="gender" value="female">
+	Other <input type="radio" name="gender" value="other"><br><br>
+	
+	Hobby: <br>
+	Soccer <input type="checkbox" name="hobby" value="soccer">
+	Playball <input type="checkbox" name="hobby" value="playball">
+	Game <input type="checkbox" name="hobby" value="game"><br><br>
+	
+	Car: <br>
+	Audi <input type="checkbox" name="car" value="audi">
+	Vinfast <input type="checkbox" name="car" value="vinfast">
+	Trường Hải <input type="checkbox" name="car" value="th"><br><br>
+	
+	Avartar: <input type="file" name="avatar"> <br><br>
+	<input type="image" src="./dan-otis.jpg" width="100px"> <br><br>
+	
+	Bio: <br>
+	<textarea name="bio" cols="40" rows="10" placeholder="Hãy mô tả đôi nét về bản thân"></textarea> <br><br>
+	
+	Job:
+	<select name="job">
+		<option value="doctor">doctor</option>
+		<option value="engineer">engineer</option>
+		<option value="teacher">teacher</option>
+		<option value="police">police</option>
+	</select><br><br>
+	
+	a11111<br>
+	<input type="hidden" name="id" value="123654">
+	a22222<br>
+	
+	
+	<button>Ấn vào đây</button>
+	<input type="button" value="Hãy ấn tôi">
+	<input type="reset" value="Nhập lại biểu mẫu">
+	<input type="submit" value="Hoàn thành">
+	
+</form>
+
+</body>
+</html>
