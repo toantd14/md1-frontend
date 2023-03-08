@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Calculate</h1>
+	<input type="text" name="number1" id="number1">
+	<input type="text" name="number2" id="number2">
+	<br><br>
+	<button onclick="cong()">Cong</button>
+	<button onclick="tru()">Tru</button>
+	<button onclick="nhan()">Nhan</button>
+	<button onclick="chia()">Chia</button>
+	<br>
+	<p>Result <span id="result"></span></p>
+
+	<script type="text/javascript">
+		function cong() {
+			var number1 = document.getElementById("number1").value;
+			var number2 = document.getElementById("number2").value;
+
+			var res = parseInt(number1) + parseInt(number2);
+			document.getElementById("result").innerHTML = 
+				"Cong: number1 + number2 = " + res;
+		}
+		function tru() {
+			var number1 = document.getElementById("number1").value;
+			var number2 = document.getElementById("number2").value;
+
+			var res = parseInt(number1) - parseInt(number2);
+			document.getElementById("result").innerHTML = 
+				"Tru: number1 - number2 = " + res;
+		}
+		function nhan() {
+			var number1 = document.getElementById("number1").value;
+			var number2 = document.getElementById("number2").value;
+
+			var res = parseInt(number1) * parseInt(number2);
+			document.getElementById("result").innerHTML = 
+				"Nhan: number1 * number2 = " + res;
+		}
+		function chia() {
+			var number1 = document.getElementById("number1").value;
+			var number2 = document.getElementById("number2").value;
+
+			var res = parseInt(number1) / parseInt(number2);
+			document.getElementById("result").innerHTML = 
+				"Chia: number1 / number2 = " + res;
+		}
+		
+	</script>
+</body>
+</html>
